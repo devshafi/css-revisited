@@ -1,0 +1,71 @@
+h2 {
+  color: red;
+}
+
+.subtitle {
+  color: blue;
+}
+
+#services {
+  color: green;
+}
+
+/* li:only-child {
+  color: purple;
+} */
+td:only-child {
+  color: steelblue;
+}
+
+/* #google-link:link{
+    color: orange;
+}
+
+#google-link:visited{
+    color: red;
+} */
+
+/* general sibling selector */
+/* no common parent need */
+h2 + a {
+  color: red;
+}
+
+/* common parent needed */
+textarea ~ button {
+  color: purple;
+}
+
+/* every single li inside ul, not nested */
+ul > li {
+  color: blue;
+}
+
+/* descendent selector - down to all nested li */
+/* ul li{
+    color: green;
+} */
+
+/* src attribute starts with ../img */
+/* img[src^="../img"] {
+    border: 10px solid black;
+} */
+
+/* src attribute exact ../img
+img[src$="../img"] {
+    border: 10px solid black;
+} */
+
+/* src attribute contains ../img in any position */
+img[src*="../img"] {
+    border: 10px solid black;
+}
+
+/* ~ means there might be other classes applied as well */
+h2[class~=article-subtitle]{
+    background: green;
+}
+
+
+
+
