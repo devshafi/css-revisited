@@ -1,3 +1,7 @@
+* {
+  /* box-sizing: border-box; */
+}
+
 body {
   background: linear-gradient(
     to bottom,
@@ -19,9 +23,61 @@ body {
 #service-image {
   height: 300px;
   width: 70%;
-  background: radial-gradient(circle, red 20%, blue 40%, green 55%); 
+  background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+  border: 4px double red;
 }
 
-.link{
-    text-decoration: underline;
+.link {
+  text-decoration: underline;
+}
+
+#about-us-image {
+  height: 300px;
+  width: 60%;
+  border: 6px solid gray;
+  padding: 20px;
+  float: right;
+}
+
+.container {
+  display: flex;
+  height: 250px;
+  background-color: antiquewhite;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-item {
+  /* width: 50px; */
+  background: green;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  flex-basis: 70px;
+  /* flex-grow: 1; */
+}
+
+.form-input {
+  display: block;
+  margin: 10px;
+}
+
+.btn-submit {
+  display: block;
+  margin: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: steelblue;
+  color: white;
+  cursor: pointer;
+  transition: background .2s ease-in-out ;
+}
+
+.btn-submit:hover{
+    /* color: rebeccapurple; */
+    /* border: 0.5px inset slateblue; */
+    background: red;
 }
